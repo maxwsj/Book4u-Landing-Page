@@ -1,0 +1,9 @@
+.button {
+   @apply bg-btn-black 
+   text-white 
+   text-xs 
+   text-center
+   w-32 h-7 
+   drop-shadow-md
+   rounded;
+}

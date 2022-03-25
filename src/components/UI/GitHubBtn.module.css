@@ -1,0 +1,46 @@
+.gitHubBtn {
+   @apply bg-blue-low 
+   text-black-txt
+   drop-shadow-lg
+   rounded;
+}
+
+/******* MOBILE SCREEN  ********/
+.gitHubBtn {
+   @apply mb:bg-black;
+}
+
+/******* SM SCREEN  ********/
+.gitHubBtn {
+   @apply w-32
+   h-12 
+   relative
+   bottom-2;
+}
+
+.gitHubBtn h1 {
+   @apply text-sm 
+   relative 
+   left-14 
+   bottom-4 
+   max-w-fit;
+}
+
+.gitHubBtn p {
+   @apply text-xs 
+   relative 
+   left-10 
+   bottom-4 
+   max-w-fit;
+}
+
+.gitHubBtn svg {
+   @apply relative 
+   left-2 
+   top-3;
+}
+
+/******* SM SCREEN  ********/
+/******* MD SCREEN  ********/
+/******* LG SCREEN  ********/
+/******* XL SCREEN  ********/

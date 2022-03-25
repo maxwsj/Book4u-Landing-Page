@@ -1,0 +1,56 @@
+.home {
+   @apply grid grid-cols-4 
+   grid-rows-5 
+   gap-2 
+   ml-2 
+   mr-2 
+   justify-around;
+}
+
+.home .home__item--1 {
+   @apply row-start-1
+   row-end-6
+   col-start-1
+   col-end-3;
+}
+
+.home .home__item--2 {
+   @apply row-start-1
+  row-end-3
+  col-start-3
+  col-end-5
+  mb-3;
+}
+
+.home__item--2 h1 {
+   @apply text-h-title 
+   font-normal 
+   text-center 
+   mb-7;
+}
+
+.home__item--2 p {
+   @apply text-sm 
+   text-center;
+}
+
+.home .home__item--3 {
+   @apply row-start-3
+   row-end-3
+   col-start-3
+   col-end-5
+   flex
+   justify-center
+   items-center
+   h-16;
+}
+
+.home .home__item--4 {
+   @apply row-start-4
+  row-end-5
+  col-start-3
+  col-end-5
+  items-start
+  flex
+  justify-around;
+}
