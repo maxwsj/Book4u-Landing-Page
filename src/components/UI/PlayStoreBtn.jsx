@@ -24,7 +24,7 @@ const PlayStoreBtn = () => {
             </g>
          </svg>
          <p>Disponível na</p>
-         <h1>PlayStore</h1>;
+         <h1>PlayStore</h1>
       </button>
    );
 };

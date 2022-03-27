@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import CarouselImg from './CarouselItems/CarouselImg';
 
 const Carousel = () => {
-  return (
-    <div>
-      <CarouselImg />
-    </div>
-  );
+   return (
+      <Fragment>
+         <CarouselImg />
+      </Fragment>
+   );
 };
 
 export default Carousel;

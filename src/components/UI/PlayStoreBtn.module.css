@@ -6,40 +6,28 @@
 }
 
 /******* MOBILE SCREEN  ********/
-.playStoreBtn {
+/* .playStoreBtn {
    @apply mb:bg-black;
-}
+} */
 
 /******* SM SCREEN  ********/
 
 .playStoreBtn {
    @apply relative
-    w-32 
-    h-12 
-    bottom-2;
+    min-w-[8rem]
+    min-h-[3rem];
 }
 
 .playStoreBtn h1 {
-   @apply text-sm 
-   relative 
-   left-11 
-   bottom-4 
-   max-w-fit;
+   @apply text-sm absolute inline-block right-4;
 }
 
 .playStoreBtn p {
-   @apply text-xs 
-   relative 
-   left-9 
-   bottom-4 
-   max-w-fit;
+   @apply text-xs absolute inline-block right-2 bottom-6;
 }
 
 .playStoreBtn svg {
-   @apply relative 
-   left-2 
-   top-3
-   animate-bounce;
+   @apply absolute inline-block left-3 top-4;
 }
 
 /******* SM SCREEN  ********/

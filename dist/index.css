@@ -421,6 +421,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+button {
+  font-family: Poppins;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -510,6 +514,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .flex {

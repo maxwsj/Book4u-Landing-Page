@@ -6,38 +6,27 @@
 }
 
 /******* MOBILE SCREEN  ********/
-.gitHubBtn {
+/* .gitHubBtn {
    @apply mb:bg-black;
-}
+} */
 
 /******* SM SCREEN  ********/
 .gitHubBtn {
-   @apply w-32
-   h-12 
-   relative
-   bottom-2;
+   @apply relative
+   min-w-[8rem]
+   min-h-[3rem];
 }
 
 .gitHubBtn h1 {
-   @apply text-sm 
-   relative 
-   left-14 
-   bottom-4 
-   max-w-fit;
+   @apply text-sm absolute inline-block right-5;
 }
 
 .gitHubBtn p {
-   @apply text-xs 
-   relative 
-   left-10 
-   bottom-4 
-   max-w-fit;
+   @apply text-xs absolute inline-block right-2 bottom-6;
 }
 
 .gitHubBtn svg {
-   @apply relative 
-   left-2 
-   top-3;
+   @apply absolute inline-block left-3 top-4;
 }
 
 /******* SM SCREEN  ********/

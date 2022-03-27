@@ -4,14 +4,14 @@ import Hero from './components/Layout/Hero';
 import './App.css';
 
 function App() {
-  return (
-    <Fragment>
-      <Navigation />
-      <div className='container'>
-        <Hero />
-      </div>
-    </Fragment>
-  );
+   return (
+      <Fragment>
+         <Navigation />
+         <main className='container'>
+            <Hero />
+         </main>
+      </Fragment>
+   );
 }
 
 export default App;
