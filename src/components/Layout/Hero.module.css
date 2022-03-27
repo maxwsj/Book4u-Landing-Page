@@ -1,0 +1,102 @@
+/******* SM SCREEN  ********/
+.home {
+   @apply grid
+   grid-cols-4 mb:grid-cols-4
+   grid-rows-[2fr_50px_1fr] mb:grid-rows-[2fr_50px] 
+   gap-2 
+   ml-2 
+   mr-2;
+}
+
+.home .home__item--1 {
+   @apply row-start-1 
+   row-end-4 
+   col-start-1 
+   col-span-2 
+   mb:row-start-1
+   mb:row-end-2
+   mb:col-start-1
+   mb:col-end-5
+   mb:justify-self-center;
+}
+
+.home .home__item--2 {
+   @apply col-span-2 row-span-1
+   mb:row-start-1
+   mb:row-end-2
+   mb:col-start-1
+   mb:col-end-5
+   mb:max-w-[220px]
+   mb:justify-self-center;
+}
+
+/* place-content-center
+place-items-center
+place-self-center
+self-center
+items-center
+content-center
+justify-self-center
+justify-items-center
+justify-center */
+
+.home__item--2 h1 {
+   @apply text-h-title
+   font-normal 
+   text-center
+   mb:text-2xl
+   mb:mt-20
+   mb:font-medium
+   mb:leading-relaxed
+   mb:tracking-wider;
+}
+/* tracking-tighter	letter-spacing: -0.05em;
+tracking-tight	letter-spacing: -0.025em;
+tracking-normal	letter-spacing: 0em;
+tracking-wide	letter-spacing: 0.025em;
+tracking-wider	letter-spacing: 0.05em;
+tracking-widest	letter-spacing: 0.1em; */
+.home__item--2 p {
+   @apply text-sm
+   text-center
+   mt-3
+   mb:hidden;
+}
+
+.home .home__item--3 {
+   @apply row-start-2 row-end-3
+   col-start-3 col-end-5
+   grid
+   place-content-center
+   mb:justify-self-center
+   mb:row-start-1
+   mb:row-end-2
+   mb:col-start-1
+   mb:col-end-5
+   mb:max-w-xs
+   mb:mt-28;
+}
+
+.home .home__item--4 {
+   @apply /* SM */
+   row-start-3 row-end-4
+   col-start-3 col-end-5
+   flex
+   justify-around
+   items-end
+   mb:flex
+   mb:place-content-center
+   mb:items-end
+   mb:row-start-2
+   mb:row-end-3
+   mb:col-start-1
+   mb:col-end-5;
+}
+
+.home__item--4 button + button {
+   @apply mb:ml-14;
+}
+
+/******* MD SCREEN  ********/
+/******* LG SCREEN  ********/
+/******* XL SCREEN  ********/

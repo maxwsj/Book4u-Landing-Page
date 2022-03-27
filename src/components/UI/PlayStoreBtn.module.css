@@ -1,0 +1,36 @@
+.playStoreBtn {
+   @apply bg-yellow-dand 
+  text-black-txt 
+  drop-shadow-lg
+  rounded;
+}
+
+/******* MOBILE SCREEN  ********/
+/* .playStoreBtn {
+   @apply mb:bg-black;
+} */
+
+/******* SM SCREEN  ********/
+
+.playStoreBtn {
+   @apply relative
+    min-w-[8rem]
+    min-h-[3rem];
+}
+
+.playStoreBtn h1 {
+   @apply text-sm absolute inline-block right-4;
+}
+
+.playStoreBtn p {
+   @apply text-xs absolute inline-block right-2 bottom-6;
+}
+
+.playStoreBtn svg {
+   @apply absolute inline-block left-3 top-4;
+}
+
+/******* SM SCREEN  ********/
+/******* MD SCREEN  ********/
+/******* LG SCREEN  ********/
+/******* XL SCREEN  ********/

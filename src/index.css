@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@400;600;700&display=swap');
+
+@font-face {
+   font-family: 'Montserrat', 'Poppins';
+   src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@400;600;700&display=swap');
+}
+
+@layer base {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      font-family: 'Montserrat', serif;
+   }
+
+   p {
+      font-family: 'Poppins', serif;
+   }
+
+   button,
+   input,
+   optgroup,
+   select,
+   textarea {
+      font-family: 'Poppins', serif;
+   }
+}
