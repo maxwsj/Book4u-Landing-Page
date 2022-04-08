@@ -19,12 +19,13 @@ import carrouselImg3 from '../../assets/CarrouselImages/carrousel-img-3.png';
 const Carousel = () => {
    return (
       <Swiper
+         allowTouchMove={true}
          spaceBetween={30}
          centeredSlides={true}
-         // autoplay={{
-         //    delay: 2500,
-         //    disableOnInteraction: false,
-         // }}
+         autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+         }}
          pagination={{
             clickable: true,
          }}

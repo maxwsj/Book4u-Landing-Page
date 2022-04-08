@@ -6,8 +6,8 @@
    text-base-content
    /* MOBILE SCREEN */
    /* SMALL SCREEN */
-   /* grid-flow-col !important; */
    justify-evenly
+   grid-flow-col !important
 }
 
 .footer__grid span {
@@ -31,6 +31,9 @@
 
 .footer__book-div {
    @apply flex flex-col items-center !important;
+}
+.footer__book-div img {
+   @apply relative bottom-2;
 }
 .footer__book-div span {
    @apply footer-title;

@@ -3,9 +3,12 @@ import GitHubBtn from '../UI/GitHubBtn';
 import PlayStoreBtn from '../UI/PlayStoreBtn';
 import CardItems from '../Layout/TeamItems/TeamCardItems';
 import classes from './Team.module.css';
+import andreImg from '../../assets/TeamImages/andre.jpeg';
+import gustavoImg from '../../assets/TeamImages/gustavo.jpeg';
+import maxImg from '../../assets/TeamImages/max.jpg';
 
 const Team = () => {
-   const img = 'https://api.lorem.space/image/face?hash=92048';
+   const teamImgs = [andreImg, gustavoImg, maxImg];
    return (
       <section className={classes.team__grid}>
          <div className={classes['team__grid-item--1']}>
@@ -19,7 +22,7 @@ const Team = () => {
                linkedin_id={'max-linkedin'}
                git_id={'max-github'}
                face_id={'max-facebook'}
-               img_src={img}
+               img_src={teamImgs[2]}
             />
             <CardItems
                name={'Gustavo Fontana'}
@@ -27,7 +30,7 @@ const Team = () => {
                linkedin_id={'gustavo-linkedin'}
                git_id={'gustavo-github'}
                face_id={'gustavo-facebook'}
-               img_src={img}
+               img_src={teamImgs[1]}
             />
             <CardItems
                name={'Andre Damázio'}
@@ -35,7 +38,7 @@ const Team = () => {
                linkedin_id={'andre-linkedin'}
                git_id={'andre-github'}
                face_id={'andre-facebook'}
-               img_src={img}
+               img_src={teamImgs[0]}
             />
          </div>
          <div className={classes['team__grid-item--3']}>

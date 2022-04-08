@@ -52,7 +52,7 @@ const Footer = () => {
                </li>
             </div>
             <div className={classes['footer__book-div']}>
-               <span>BOOK4U</span>
+               <Logo />
                <p>Book4U facilita e agiliza a troca de livros.</p>
                <div className={classes['footer__book-div--icons']}>
                   <button onClick={gitHubLink}>

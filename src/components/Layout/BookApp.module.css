@@ -3,6 +3,7 @@
     grid-cols-4
     grid-rows-3
     mb:grid-rows-[1fr_1fr_1fr_1fr_150px]
+    sm:grid-rows-[1fr_1fr_1fr_1fr_50px]
     gap-2 
     ml-2 
     mr-2

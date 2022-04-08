@@ -1,30 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import Logo from '../UI/Logo';
 
-const Navigation = (props) => {
-   let [open, setOpen] = useState(false);
-   const navDropDownHandler = () => setOpen(!open);
-   const closeDropDownHandler = () => setOpen(open);
-
-   let [openMenu, setOpenMenu] = useState('swap-on');
-   const openMenuHandler = () => setOpenMenu(openMenu);
-
-   let [closeMenu, setCloseMenu] = useState('swap-off');
-   const closeMenuHandler = () => setCloseMenu(closeMenu);
-
+const Navigation = ({
+   onOpen,
+   open,
+   onOpenMenu,
+   openMenu,
+   onCloseMenu,
+   closeMenu,
+}) => {
    useEffect(() => {
       const hideMenu = () => {
          if (window.innerWidth > 768 && open) {
-            navDropDownHandler();
+            onOpen();
             if (openMenu === 'swap-on') {
-               setOpenMenu('swap-off');
+               onOpenMenu('swap-off');
             } else if (openMenu === 'swap-off') {
-               setOpenMenu('swap-on');
+               onOpenMenu('swap-on');
             }
             if (closeMenu === 'swap-off') {
-               setCloseMenu('swap-on');
+               onCloseMenu('swap-on');
             } else if (closeMenu === 'swap-on') {
-               setCloseMenu('swap-off');
+               onCloseMenu('swap-off');
             }
          }
       };
@@ -44,16 +42,16 @@ const Navigation = (props) => {
       text-gray-800'
             >
                {/* <span className='text-3xl text-indigo-600 mr-1 pt-2'>Logo</span> */}
-               Book4U
+               <Logo />
             </div>
 
             <label className='swap swap-rotate text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-               <input type='checkbox' onClick={navDropDownHandler} />
+               <input type='checkbox' onClick={onOpen} />
                <svg
                   id='menu'
                   xmlns='http://www.w3.org/2000/svg'
                   className={`${'h-6 w-6'} ${openMenu}`}
-                  onClick={openMenuHandler}
+                  onClick={onOpenMenu}
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'
@@ -69,7 +67,7 @@ const Navigation = (props) => {
                   id='close'
                   xmlns='http://www.w3.org/2000/svg'
                   className={`${'h-6 w-6'} ${closeMenu}`}
-                  onClick={closeMenuHandler}
+                  onClick={onCloseMenu}
                   fill='none'
                   viewBox='0 0 24 24'
                   stroke='currentColor'

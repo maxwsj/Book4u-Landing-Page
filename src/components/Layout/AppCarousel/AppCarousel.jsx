@@ -19,14 +19,15 @@ import { Autoplay, Pagination, Navigation } from 'swiper';
 const AppCarousel = () => {
    return (
       <Swiper
+         allowTouchMove={true}
          slidesPerView={1}
          // spaceBetween={30}
          centeredSlides={true}
          centeredSlidesBounds={true}
-         // autoplay={{
-         //    delay: 2500,
-         //    disableOnInteraction: false,
-         // }}
+         autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+         }}
          loop={true}
          pagination={{
             clickable: true,
