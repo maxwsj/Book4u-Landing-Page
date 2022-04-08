@@ -1,45 +1,132 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../UI/Logo';
+import React, { useState, useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
-const Navigation = () => {
+const Navigation = (props) => {
+   let [open, setOpen] = useState(false);
+   const navDropDownHandler = () => setOpen(!open);
+   const closeDropDownHandler = () => setOpen(open);
+
+   let [openMenu, setOpenMenu] = useState('swap-on');
+   const openMenuHandler = () => setOpenMenu(openMenu);
+
+   let [closeMenu, setCloseMenu] = useState('swap-off');
+   const closeMenuHandler = () => setCloseMenu(closeMenu);
+
+   useEffect(() => {
+      const hideMenu = () => {
+         if (window.innerWidth > 768 && open) {
+            navDropDownHandler();
+            if (openMenu === 'swap-on') {
+               setOpenMenu('swap-off');
+            } else if (openMenu === 'swap-off') {
+               setOpenMenu('swap-on');
+            }
+            if (closeMenu === 'swap-off') {
+               setCloseMenu('swap-on');
+            } else if (closeMenu === 'swap-on') {
+               setCloseMenu('swap-off');
+            }
+         }
+      };
+
+      window.addEventListener('resize', hideMenu);
+
+      return () => {
+         window.removeEventListener('resize', hideMenu);
+      };
+   });
+
    return (
-      <nav
-         className='flex justify-between mt-3 mb-5 items-center h-12 text-black relative shadow-sm'
-         role='navigation'
-      >
-         <Link to='/'>
-            <Logo />
-         </Link>
-         <div className='md:hidden mr-3'>
-            <svg
-               xmlns='http://www.w3.org/2000/svg'
-               className='h-6 w-6'
-               fill='none'
-               viewBox='0 0 24 24'
-               stroke='currentColor'
-               strokeWidth={2}
+      <nav className='shadow-md w-full sticky top-0 left-0 mb-3 z-40'>
+         <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+            <div
+               className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-gray-800'
             >
-               <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M4 6h16M4 12h16M4 18h16'
-               />
-            </svg>
-         </div>
-         <div className='md:block hidden'>
-            <Link to='/aplicativo' className='p-4 '>
-               Aplicativo
-            </Link>
-            <Link to='/contato' className='p-4'>
-               Contato
-            </Link>
-            <Link to='/sobre' className='p-4'>
-               Sobre
-            </Link>
-            <Link to='/' className='p-4 '>
-               Home
-            </Link>
+               {/* <span className='text-3xl text-indigo-600 mr-1 pt-2'>Logo</span> */}
+               Book4U
+            </div>
+
+            <label className='swap swap-rotate text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+               <input type='checkbox' onClick={navDropDownHandler} />
+               <svg
+                  id='menu'
+                  xmlns='http://www.w3.org/2000/svg'
+                  className={`${'h-6 w-6'} ${openMenu}`}
+                  onClick={openMenuHandler}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  strokeWidth={2}
+               >
+                  <path
+                     strokeLinecap='round'
+                     strokeLinejoin='round'
+                     d='M6 18L18 6M6 6l12 12'
+                  />
+               </svg>
+               <svg
+                  id='close'
+                  xmlns='http://www.w3.org/2000/svg'
+                  className={`${'h-6 w-6'} ${closeMenu}`}
+                  onClick={closeMenuHandler}
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  strokeWidth={2}
+               >
+                  <path
+                     strokeLinecap='round'
+                     strokeLinejoin='round'
+                     d='M4 6h16M4 12h16M4 18h16'
+                  />
+               </svg>
+            </label>
+
+            <ul
+               className={` mb:flex mb:flex-col mb:items-center sm:flex sm:flex-col sm:items-center md:flex md:flex-row md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto  left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+                  open
+                     ? 'top-[60px] border-t-[3px] border-yellow-dand'
+                     : 'top-[-490px]'
+               }`}
+            >
+               <li className='md:ml-8 text-lg md:my-0 my-7'>
+                  <Link
+                     to='/#top'
+                     className='text-gray-800 hover:text-gray-400 duration-500 '
+                     smooth
+                  >
+                     Home
+                  </Link>
+               </li>
+               <li className='md:ml-8 text-lg md:my-0 my-7'>
+                  <Link
+                     to='/#about'
+                     className='text-gray-800 hover:text-gray-400 duration-500'
+                     smooth
+                  >
+                     Sobre
+                  </Link>
+               </li>
+               <li className='md:ml-8 text-lg md:my-0 my-7'>
+                  <Link
+                     to='/#bookapp'
+                     className='text-gray-800 hover:text-gray-400 duration-500'
+                     smooth
+                  >
+                     Aplicativo
+                  </Link>
+               </li>
+               <li className='md:ml-8 text-lg md:my-0 my-7'>
+                  <Link
+                     to='/#team'
+                     className='text-gray-800 hover:text-gray-400 duration-500'
+                     smooth
+                  >
+                     Time
+                  </Link>
+               </li>
+            </ul>
          </div>
       </nav>
    );

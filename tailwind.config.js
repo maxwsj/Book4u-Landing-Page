@@ -2,7 +2,7 @@ module.exports = {
    content: ['./src/**/*.{js,jsx,ts,tsx}'],
    theme: {
       screens: {
-         mb: { max: '600px' },
+         mb: { max: '639px' },
          // => @media (min-width: 640px) { ... }
 
          sm: '640px',
@@ -38,7 +38,20 @@ module.exports = {
             'pink-gum': '#EAB5C2',
             'black-txt': '#1D1C1C',
          },
+
+         display: ['group-hover'],
       },
    },
-   plugins: [],
+   plugins: [require('daisyui')],
+   daisyui: {
+      styled: true,
+      themes: false,
+      base: true,
+      utils: true,
+      logs: true,
+      rtl: false,
+      prefix: '',
+      darkTheme: 'dark',
+   },
+   important: true,
 };

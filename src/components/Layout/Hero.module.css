@@ -1,51 +1,119 @@
 /******* SM SCREEN  ********/
 .home {
    @apply grid
-   grid-cols-4 mb:grid-cols-4
-   grid-rows-[2fr_50px_1fr] mb:grid-rows-[2fr_50px] 
+   grid-cols-4
+   grid-rows-[2fr_100px_1fr] 
    gap-2 
    ml-2 
-   mr-2;
+   mr-2
+   mt-5
+   /* MOBILE SCREEN */
+   mb:grid-rows-[2fr_50px]
+   /* LARGE SCREEN */
+   lg:grid-cols-[1fr_1fr_2fr_1fr] 
+   lg:grid-rows-[2fr_100px_100px]
+   /* EXTRA LARGE SCREEN */
+   2xl:grid-cols-[1fr_1fr_2fr_2fr] 
+   2xl:grid-rows-[2fr_100px_100px]
 }
 
 .home .home__item--1 {
    @apply row-start-1 
    row-end-4 
    col-start-1 
-   col-span-2 
+   col-end-3
+   /* MOBILE SCREEN */
    mb:row-start-1
    mb:row-end-2
    mb:col-start-1
    mb:col-end-5
-   mb:justify-self-center;
+   mb:justify-self-center
+   mb:overflow-hidden w-80
+   mb:z-0
+   /* SMALL SCREEN */
+   sm:w-full sm:h-full
+   /* MEDIUM SCREEN */
+   md:w-full md:h-full
+   /* LARGE SCREEN */
+   lg:w-full lg:h-full
+   /* EXTRA LARGE SCREEN */
+   xl:w-full xl:h-full
+   /* EXTRA LARGE SCREEN */
+   2xl:w-full 2xl:h-full
 }
 
+
 .home .home__item--2 {
-   @apply col-span-2 row-span-1
+   @apply row-start-1 row-end-2 col-start-3 col-end-5
+   /* MOBILE SCREEN */
    mb:row-start-1
    mb:row-end-2
    mb:col-start-1
    mb:col-end-5
    mb:max-w-[220px]
-   mb:justify-self-center;
+   mb:justify-self-center
+   mb:h-2
+   /* SMALL SCREEN */
+   sm:flex 
+   sm:flex-col
+   sm:items-center
+   sm:justify-around
+   /* MEDIUM SCREEN */
+   
+   /* LARGE SCREEN */
 }
 
 .home__item--2 h1 {
-   @apply text-h-title
+   @apply 
    font-normal 
    text-center
+   /* SMALL SCREEN */
+   sm:text-h-title
+   sm:text-center
+   sm:w-72
+   sm:whitespace-pre-line
+   /* MOBILE SCREEN */
    mb:text-2xl
    mb:mt-20
    mb:font-medium
    mb:leading-relaxed
-   mb:tracking-wider;
+   mb:tracking-wider
+   mb:font-[#000000]
+
+   /* MEDIUM SCREEN */
+   md:text-4xl
+   md:leading-relaxed
+   md:tracking-wider
+   /* LARGE SCREEN */
+   lg:font-light
+   lg:text-5xl
+   lg:w-[30.625rem]
+   /* EXTRA LARGE SCREEN */
+   2xl:font-light
+   2xl:text-6xl
+   2xl:leading-relaxed
+   2xl:tracking-wider
+   2xl:w-[40.625rem]
 }
 
 .home__item--2 p {
-   @apply text-sm
+   @apply 
    text-center
-   mt-3
-   mb:hidden;
+   /* MOBILE SCREEN */
+   mb:hidden
+   /* SMALL SCREEN */
+   sm:text-sm
+   sm:mt-3
+   /* MEDIUM SCREEN */
+   md:text-base
+   md:tracking-wide
+   md:pt-5
+   md:w-auto
+   md:h-auto
+   /* LARGE SCREEN */
+   lg:w-[35.625rem]
+   /* LARGE SCREEN */
+   lg:text-lg
 }
 
 .home .home__item--3 {
@@ -53,29 +121,44 @@
    col-start-3 col-end-5
    grid
    place-content-center
+   /* MOBILE SCREEN */
    mb:justify-self-center
+   mb:self-center
    mb:row-start-1
    mb:row-end-2
    mb:col-start-1
    mb:col-end-5
    mb:max-w-xs
-   mb:mt-28;
+   mb:mt-28
+   mb:h-6
+   /* SMALL SCREEN */
+   sm:place-self-center
+   sm:self-end
+   /* MEDIUM SCREEN */
+   md:place-self-center
+   md:self-center
 }
 
 .home .home__item--4 {
-   @apply /* SM */
+   @apply 
    row-start-3 row-end-4
    col-start-3 col-end-5
    flex
    justify-around
    items-end
+   /* SMALL SCREEN */
+   /* MOBILE SCREEN */
    mb:flex
    mb:place-content-center
    mb:items-end
    mb:row-start-2
    mb:row-end-3
    mb:col-start-1
-   mb:col-end-5;
+   mb:col-end-5
+   /* EXTRA LARGE SCREEN */
+   2xl:flex
+   2xl:place-content-evenly
+   2xl:items-end
 }
 
 .home__item--4 button + button {

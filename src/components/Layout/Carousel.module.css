@@ -1,0 +1,29 @@
+.swiper__bullets-color :global(.swiper-pagination-bullet-active) {
+   @apply bg-yellow-dand
+}
+
+
+/* .swiper-pagination-bullet */
+/* :global(.swiper-slide) {
+   @apply 2xl:mr-2 !important
+} */
+
+.swiper__container :global(.swiper-slide img) {
+   @apply
+    /* MEDIUM SCREEN */
+   md:h-full 
+   md:max-w-[28.125rem] 
+   md:w-full
+   /* LARGE SCREEN */
+   lg:h-full 
+   lg:max-w-[31.125rem] 
+   lg:w-full
+   /* EXTRA LARGE SCREEN */
+   xl:h-full 
+   xl:max-w-[35.125rem] 
+   xl:w-full
+   /* EXTRA LARGE SCREEN */
+   2xl:h-full 
+   2xl:max-w-[35.125rem] 
+   2xl:w-full
+}

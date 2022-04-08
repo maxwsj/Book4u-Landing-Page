@@ -1,0 +1,89 @@
+.team__grid {
+   @apply grid
+   grid-cols-4
+   grid-rows-4
+   gap-2 
+   ml-2 
+   mr-2
+   /* MOBILE SCREEN */ 
+   mb:grid-rows-[100px_1fr_1fr_150px];
+}
+
+.team__grid .team__grid-item--1 {
+   @apply 
+   row-start-1 
+   row-end-2 
+   col-start-1 
+   col-end-5 
+   flex 
+   flex-col 
+   text-center 
+   justify-center;
+}
+
+.team__grid .team__grid-item--1 h1 {
+   @apply 
+   font-light 
+   /* MOBILE SCREEN */
+   mb:text-3xl  
+   /* SMALL SCREEN */
+   sm:text-3xl 
+   /* MEDIUM SCREEN */
+   md:text-4xl
+   /* LARGE SCREEN */
+   lg:text-4xl
+   /* EXTRA LARGE SCREEN */
+   xl:text-4xl
+   /* 2X EXTRA LARGE SCREEN */
+   2xl:text-5xl
+
+}
+
+.team__grid .team__grid-item--1 h2 {
+   @apply 
+   /* MOBILE SCREEN */
+   mb:text-lg mb:pt-5
+   /* SMALL SCREEN */
+   sm:text-lg sm:pt-5
+   /* MEDIUM SCREEN */
+   md:text-xl md:pt-8
+}
+
+.team__grid .team__grid-item--2 {
+   @apply 
+   row-start-2 
+   row-end-4 
+   col-start-1 
+   col-end-5 
+   flex
+   /* MOBILE SCREEN */
+   mb:flex-col
+   mb:items-center;
+}
+
+.team__grid .team__grid-item--2 div + div {
+   @apply mb:mt-5;
+}
+
+.team__grid .team__grid-item--3 {
+   @apply row-start-4 row-end-5 col-start-3 col-end-5
+   flex
+   justify-around
+   items-end
+   /* MOBILE SCREEN */
+   mb:row-start-4
+   mb:row-end-5
+   mb:col-start-2
+   mb:col-end-4
+   mb:place-content-between
+   mb:items-center
+   /* MEDIUM SCREEN */
+  ;
+}
+
+/* .card_container-img {
+   @apply w-48 lg:w-56 rounded relative flex;
+} */
+/* .card_img {
+   @apply hover:opacity-50 transition-opacity duration-500 ease-in-out;
+} */

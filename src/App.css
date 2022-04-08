@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@400;600;700&display=swap');
 
 @layer base {
+   body {
+      background-color: rgb(248 250 252);
+      color: #141823;
+      
+   }
+   
    h1,
    h2,
    h3,

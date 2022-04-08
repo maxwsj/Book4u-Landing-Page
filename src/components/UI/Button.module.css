@@ -1,9 +1,20 @@
 .button {
-   @apply bg-btn-black 
+   @apply transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+   bg-btn-black 
    text-white 
-   text-xs 
    text-center
-   w-32 h-7 
    drop-shadow-md
-   rounded;
+   rounded
+   w-36 h-10
+   /* MOBILE SCREEN */
+   mb:text-xs
+   mb:z-20
+
+   /* SMALL SCREEN */
+   sm:text-sm 
+
+   /* MEDIUM SCREEN */
+   md:w-40 
+   md:h-10
+   md:text-base
 }

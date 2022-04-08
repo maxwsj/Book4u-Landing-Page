@@ -1,0 +1,180 @@
+.about_grid {
+   @apply grid
+    grid-cols-4
+    grid-rows-3
+    gap-2 
+    ml-2 
+    mr-2
+    /* MOBILE SCREEN */ 
+    mb:grid-rows-[100px_1fr_150px]
+}
+
+.about_grid .about__grid-item--1 {
+   @apply 
+   row-span-1 
+   col-start-2 
+   col-end-4 
+   text-center 
+   font-light 
+   self-center
+   /* MOBILE SCREEN */
+   mb:text-3xl  
+   /* SMALL SCREEN */
+   sm:text-3xl 
+   /* MEDIUM SCREEN */
+   md:text-4xl
+   /* LARGE SCREEN */
+   lg:text-4xl
+   /* EXTRA LARGE SCREEN */
+   xl:text-4xl
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:text-5xl;
+}
+
+
+.about_grid .about__grid-item--2 {
+   @apply row-span-1 col-span-4 
+   flex
+   justify-evenly
+   items-end
+   /* MOBILE SCREEN */
+   mb:flex-col
+   mb:items-center
+   
+}
+.about_grid .about__grid-item--3 {
+   @apply row-span-1 col-start-3 col-end-5 
+   flex
+   justify-around
+   items-end
+   /* MOBILE SCREEN */
+   mb:row-start-3
+   mb:row-end-4
+   mb:col-start-2
+   mb:col-end-4
+   mb:place-content-between
+   mb:items-center
+}
+
+.about_grid .card {
+   @apply relative;
+}
+
+.about_grid .card div {
+   @apply drop-shadow-md
+   text-[#FAF9F6]
+   text-center
+   rounded
+   flex
+   place-content-center
+   flex-wrap
+   /* MOBILE SCREEN */
+   mb:h-32
+   mb:w-44
+   /* SMALL SCREEN */
+   sm:h-32
+   sm:w-44
+   /* MEDIUM SCREEN */
+   md:h-44
+   md:w-52
+   /* LARGE SCREEN */
+   lg:h-44
+   lg:w-52
+   /* EXTRA LARGE SCREEN */
+   xl:h-44
+   xl:w-52
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:h-56
+   2xl:w-80
+
+}
+
+.about_grid .card h1 {
+   @apply 
+   font-medium 
+   text-[0.85rem] 
+   tracking-wide 
+   mt-9 
+   mb-1
+   /* MOBILE SCREEN */
+   mb:text-[0.85rem] 
+   /* SMALL SCREEN */
+   sm:text-[0.85rem] 
+   /* MEDIUM SCREEN */
+   md:text-lg
+   /* LARGE SCREEN */
+   lg:text-lg
+   /* EXTRA LARGE SCREEN */
+   xl:text-xl
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:text-2xl
+
+}
+
+.about_grid .card p {
+   @apply font-medium 
+   h-12
+   /* MOBILE SCREEN */
+   mb:text-[0.70rem]  
+   /* SMALL SCREEN */
+   sm:text-[0.70rem]  
+   /* MEDIUM SCREEN */
+   md:text-sm
+   /* LARGE SCREEN */
+   lg:text-sm
+   /* EXTRA LARGE SCREEN */
+   xl:text-sm
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:text-base
+
+}
+
+.about_grid .card div:first-child {
+    @apply bg-pink-gum 
+    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+}
+
+.about_grid .card div:nth-child(2) {
+   @apply bg-yellow-dand
+   transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
+}
+
+.about_grid .card div:nth-child(3) {
+   @apply bg-blue-medium
+   transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
+}
+
+.about_grid .card div + div {
+   @apply mb:mt-5;
+}
+.about_grid i {
+   @apply absolute
+   /* MOBILE SCREEN */
+   mb:bottom-[5.65rem]  
+   /* SMALL SCREEN */
+   sm:bottom-[5.65rem] 
+   /* MEDIUM SCREEN */
+   md:top-5
+   /* LARGE SCREEN */
+
+   /* EXTRA LARGE SCREEN */
+
+   /* 2x EXTRA LARGE SCREEN */
+
+}
+
+.about_grid i svg {
+   @apply 
+   /* MOBILE SCREEN */
+   /* SMALL SCREEN */
+   /* MEDIUM SCREEN */
+   /* LARGE SCREEN */
+   /* EXTRA LARGE SCREEN */
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:w-10 2xl:h-10
+}
+
+.about_grid .card .about__card--3 p {
+   @apply px-2 break-all whitespace-pre-line;
+}
+

@@ -1,0 +1,61 @@
+.footer__grid {
+   @apply 
+   footer
+   p-10 
+   bg-blue-medium 
+   text-base-content
+   /* MOBILE SCREEN */
+   /* SMALL SCREEN */
+   /* grid-flow-col !important; */
+   justify-evenly
+}
+
+.footer__grid span {
+   @apply lg:text-lg
+}
+
+.footer__grid p {
+   @apply lg:text-base
+}
+
+.footer__grid li {
+   @apply lg:text-base list-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+}
+
+.footer__info-div span {
+   @apply footer-title
+}
+.footer__info-div p {
+   @apply hover:cursor-pointer
+}
+
+.footer__book-div {
+   @apply flex flex-col items-center !important;
+}
+.footer__book-div span {
+   @apply footer-title;
+}
+.footer__book-div p {
+   @apply break-all whitespace-pre-line w-32 text-center;
+}
+
+/* .footer__about-div {
+   @apply 
+} */
+.footer__about-div span {
+   @apply footer-title
+}
+
+.footer__book-div--icons {
+   @apply grid grid-flow-col gap-4
+}
+.footer__book-div--icons svg {
+   @apply  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+}
+
+.footer_book-baseboard {
+   @apply h-9 w-full bg-blue-low text-center
+}
+.footer_book-baseboard p {
+   @apply text-xs pt-2
+}

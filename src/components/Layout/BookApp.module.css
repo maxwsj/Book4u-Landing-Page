@@ -1,0 +1,102 @@
+.bookApp__grid {
+   @apply grid
+    grid-cols-4
+    grid-rows-3
+    mb:grid-rows-[1fr_1fr_1fr_1fr_150px]
+    gap-2 
+    ml-2 
+    mr-2
+}
+
+.bookApp__grid--item-1 {
+   @apply 
+   row-start-1 
+   row-end-5
+   col-start-1 
+   col-end-3
+   overflow-hidden
+   /* LARGE SCREEN */
+   lg:w-full lg:h-full
+}
+
+.bookApp__grid--item-2 {
+   @apply 
+   row-start-1 
+   row-end-2 
+   col-start-3 
+   col-end-5 
+   text-center 
+   self-center;
+}
+.bookApp__grid--item-2 h1 {
+   @apply 
+   text-center 
+   font-light 
+   self-center
+   tracking-widest
+   /* MOBILE SCREEN */
+   mb:text-3xl  
+   /* SMALL SCREEN */
+   sm:text-3xl 
+   /* MEDIUM SCREEN */
+   md:text-4xl
+   /* LARGE SCREEN */
+   lg:text-4xl
+   /* EXTRA LARGE SCREEN */
+   xl:text-4xl
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:text-5xl;
+
+
+}
+
+.bookApp__grid--item-3 {
+   @apply 
+   row-start-2 
+   row-end-5 
+   col-start-3 
+   col-end-5 
+   flex;
+}
+.bookApp__grid--item-3 ul {
+   @apply list-none
+   2xl:text-lg
+   pl-0;
+}
+.bookApp__grid--item-3 i {
+   @apply inline-block ml-1;
+}
+
+.bookApp__grid--item-3 li {
+   @apply mr-10;
+}
+.bookApp__grid--item-3 li:not(:last-child) {
+   @apply mb-5;
+}
+
+.bookApp__grid--item-3 svg {
+   @apply inline-block mr-2;
+}
+
+.bookApp__grid--item-4 {
+   @apply 
+   row-start-4 
+   row-end-5 
+   col-start-3 
+   col-end-5
+   flex
+   justify-around
+   items-end
+   /* MOBILE SCREEN */
+   mb:row-start-5
+   mb:row-end-6
+   mb:col-start-2
+   mb:col-end-4
+   mb:place-content-between
+   mb:items-center
+   /* SMALL SCREEN SCREEN */
+   sm:row-start-6 
+   sm:row-end-6
+   sm:col-start-3 
+   sm:col-end-5
+}

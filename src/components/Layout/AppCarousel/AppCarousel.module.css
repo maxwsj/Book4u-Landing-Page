@@ -1,0 +1,11 @@
+.swiper__bullet :global(.swiper-pagination-bullet-active) {
+   @apply bg-yellow-dand;
+}
+
+.swiper__slide :global(.swiper-slide img) {
+   @apply mx-auto
+   /* LARGE SCREEN */
+   lg:h-full 
+   lg:max-w-[14.125rem] 
+   lg:w-full;
+}

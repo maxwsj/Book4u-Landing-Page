@@ -1,0 +1,11 @@
+.card__container {
+   @apply card bg-base-100 shadow-xl mx-auto 
+   w-44 
+   h-80 
+   md:mt-5
+
+   lg:w-56 
+   lg:h-96 
+   
+}
+

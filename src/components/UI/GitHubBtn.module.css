@@ -14,19 +14,75 @@
 .gitHubBtn {
    @apply relative
    min-w-[8rem]
-   min-h-[3rem];
+   min-h-[3rem]
+   /* MOBILE SCREEN */
+   /* SMALL SCREEN */
+   /* MEDIUM SCREEN */
+   md:w-36 md:h-16
+   /* LARGE SCREEN */
+   /* EXTRA LARGE SCREEN */
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:w-40 2xl:h-16
+   transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
 }
 
 .gitHubBtn h1 {
-   @apply text-sm absolute inline-block right-5;
+   @apply absolute 
+   inline-block
+   /* MOBILE SCREEN */
+   mb:text-sm
+   mb:right-5 
+   /* SMALL SCREEN */
+   sm:text-sm 
+   sm:right-4
+   /* MEDIUM SCREEN */
+   md:text-base
+   md:right-7
+   /* LARGE SCREEN */
+   /* EXTRA LARGE SCREEN */
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:text-base;
 }
 
 .gitHubBtn p {
-   @apply text-xs absolute inline-block right-2 bottom-6;
+   @apply 
+   absolute
+   inline-block 
+   /* MOBILE SCREEN */
+   mb:text-xs
+   mb:right-2 
+   mb:bottom-6
+   /* SMALL SCREEN */
+   sm:text-xs 
+   sm:right-2 
+   sm:bottom-6
+   /* MEDIUM SCREEN */
+   md:text-sm
+   md:right-3 
+   md:bottom-8
+   /* LARGE SCREEN */
+   /* EXTRA LARGE SCREEN */
+   /* 2x EXTRA LARGE SCREEN */
+;
 }
 
 .gitHubBtn svg {
-   @apply absolute inline-block left-3 top-4;
+   @apply 
+   absolute 
+   inline-block 
+   /* MOBILE SCREEN */
+   mb:left-2 mb:top-4
+   /* SMALL SCREEN */
+   sm:left-3 
+   sm:top-4
+   /* MEDIUM SCREEN */
+   md:w-6 md:h-6
+   md:left-2 md:top-5
+   /* LARGE SCREEN */
+   /* EXTRA LARGE SCREEN */
+   /* 2x EXTRA LARGE SCREEN */
+   2xl:w-7 2xl:h-7
+   2xl:left-3 2xl:top-5
 }
 
 /******* SM SCREEN  ********/
