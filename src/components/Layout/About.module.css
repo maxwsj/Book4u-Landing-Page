@@ -6,12 +6,11 @@
     ml-2 
     mr-2
     /* MOBILE SCREEN */ 
-    mb:grid-rows-[100px_1fr_150px]
+    mb:grid-rows-[100px_1fr_150px];
 }
 
 .about_grid .about__grid-item--1 {
-   @apply 
-   row-span-1 
+   @apply row-span-1 
    col-start-2 
    col-end-4 
    text-center 
@@ -31,7 +30,6 @@
    2xl:text-5xl;
 }
 
-
 .about_grid .about__grid-item--2 {
    @apply row-span-1 col-span-4 
    flex
@@ -39,8 +37,7 @@
    items-end
    /* MOBILE SCREEN */
    mb:flex-col
-   mb:items-center
-   
+   mb:items-center;
 }
 .about_grid .about__grid-item--3 {
    @apply row-span-1 col-start-3 col-end-5 
@@ -53,7 +50,7 @@
    mb:col-start-2
    mb:col-end-4
    mb:place-content-between
-   mb:items-center
+   mb:items-center;
 }
 
 .about_grid .card {
@@ -85,13 +82,11 @@
    xl:w-52
    /* 2x EXTRA LARGE SCREEN */
    2xl:h-56
-   2xl:w-80
-
+   2xl:w-80;
 }
 
 .about_grid .card h1 {
-   @apply 
-   font-medium 
+   @apply font-medium 
    text-[0.85rem] 
    tracking-wide 
    mt-9 
@@ -107,8 +102,7 @@
    /* EXTRA LARGE SCREEN */
    xl:text-xl
    /* 2x EXTRA LARGE SCREEN */
-   2xl:text-2xl
-
+   2xl:text-2xl;
 }
 
 .about_grid .card p {
@@ -125,22 +119,21 @@
    /* EXTRA LARGE SCREEN */
    xl:text-sm
    /* 2x EXTRA LARGE SCREEN */
-   2xl:text-base
-
+   2xl:text-base;
 }
 
 .about_grid .card div:first-child {
-    @apply bg-pink-gum 
-    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+   @apply bg-primary 
+    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
 }
 
 .about_grid .card div:nth-child(2) {
-   @apply bg-yellow-dand
+   @apply bg-secondary
    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
 }
 
 .about_grid .card div:nth-child(3) {
-   @apply bg-blue-medium
+   @apply bg-tertiary
    transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
 }
 
@@ -159,22 +152,19 @@
 
    /* EXTRA LARGE SCREEN */
 
-   /* 2x EXTRA LARGE SCREEN */
-
+   /* 2x EXTRA LARGE SCREEN */;
 }
 
 .about_grid i svg {
-   @apply 
-   /* MOBILE SCREEN */
+   @apply /* MOBILE SCREEN */
    /* SMALL SCREEN */
    /* MEDIUM SCREEN */
    /* LARGE SCREEN */
    /* EXTRA LARGE SCREEN */
    /* 2x EXTRA LARGE SCREEN */
-   2xl:w-10 2xl:h-10
+   2xl:w-10 2xl:h-10;
 }
 
 .about_grid .card .about__card--3 p {
    @apply px-2 break-all whitespace-pre-line;
 }
-

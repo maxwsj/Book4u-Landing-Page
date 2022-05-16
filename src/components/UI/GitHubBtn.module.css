@@ -1,5 +1,5 @@
 .gitHubBtn {
-   @apply bg-blue-low 
+   @apply bg-quaternary 
    text-black-txt
    drop-shadow-lg
    rounded;

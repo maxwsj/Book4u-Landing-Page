@@ -84,7 +84,7 @@ const Navigation = ({
             <ul
                className={` mb:flex mb:flex-col mb:items-center sm:flex sm:flex-col sm:items-center md:flex md:flex-row md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto  left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
                   open
-                     ? 'top-[60px] border-t-[3px] border-yellow-dand'
+                     ? 'top-[60px] border-t-[3px] border-secondary'
                      : 'top-[-490px]'
                }`}
             >

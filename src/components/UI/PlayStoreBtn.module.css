@@ -1,5 +1,5 @@
 .playStoreBtn {
-   @apply bg-yellow-dand 
+   @apply bg-quaternary
   text-black-txt 
   drop-shadow-lg
   rounded;
@@ -24,12 +24,11 @@
    /* EXTRA LARGE SCREEN */
    /* 2x EXTRA LARGE SCREEN */
    2xl:w-40 2xl:h-16
-   transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+   transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
 }
 
 .playStoreBtn h1 {
-   @apply 
-   absolute 
+   @apply absolute 
    inline-block 
    /* MOBILE SCREEN */
    mb:text-sm
@@ -47,8 +46,7 @@
 }
 
 .playStoreBtn p {
-   @apply 
-   absolute
+   @apply absolute
    inline-block
    /* MOBILE SCREEN */
    mb:text-xs
@@ -66,8 +64,7 @@
 }
 
 .playStoreBtn svg {
-   @apply 
-   absolute 
+   @apply absolute 
    inline-block 
    /* MOBILE SCREEN */
    mb:left-2 mb:top-4

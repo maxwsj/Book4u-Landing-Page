@@ -1,7 +1,6 @@
 .swiper__bullets-color :global(.swiper-pagination-bullet-active) {
-   @apply bg-yellow-dand
+   @apply bg-secondary;
 }
-
 
 /* .swiper-pagination-bullet */
 /* :global(.swiper-slide) {
@@ -9,8 +8,7 @@
 } */
 
 .swiper__container :global(.swiper-slide img) {
-   @apply
-    /* MEDIUM SCREEN */
+   @apply /* MEDIUM SCREEN */
    md:h-full 
    md:max-w-[28.125rem] 
    md:w-full
@@ -25,5 +23,5 @@
    /* EXTRA LARGE SCREEN */
    2xl:h-full 
    2xl:max-w-[35.125rem] 
-   2xl:w-full
+   2xl:w-full;
 }

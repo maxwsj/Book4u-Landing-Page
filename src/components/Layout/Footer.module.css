@@ -2,7 +2,7 @@
    @apply 
    footer
    p-10 
-   bg-blue-medium 
+   bg-primary
    text-base-content
    /* MOBILE SCREEN */
    /* SMALL SCREEN */
@@ -15,18 +15,18 @@
 }
 
 .footer__grid p {
-   @apply lg:text-base
+   @apply lg:text-base text-snow
 }
 
 .footer__grid li {
-   @apply lg:text-base list-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+   @apply lg:text-base list-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-snow
 }
 
 .footer__info-div span {
-   @apply footer-title
+   @apply footer-title text-snow
 }
 .footer__info-div p {
-   @apply hover:cursor-pointer
+   @apply hover:cursor-pointer 
 }
 
 .footer__book-div {
@@ -39,14 +39,14 @@
    @apply footer-title;
 }
 .footer__book-div p {
-   @apply break-all whitespace-pre-line w-32 text-center;
+   @apply break-all whitespace-pre-line w-32 text-center text-snow;
 }
 
 /* .footer__about-div {
    @apply 
 } */
 .footer__about-div span {
-   @apply footer-title
+   @apply footer-title text-snow
 }
 
 .footer__book-div--icons {
@@ -57,8 +57,8 @@
 }
 
 .footer_book-baseboard {
-   @apply h-9 w-full bg-blue-low text-center
+   @apply h-9 w-full bg-quaternary text-center
 }
 .footer_book-baseboard p {
-   @apply text-xs pt-2
+   @apply text-xs pt-2 
 }

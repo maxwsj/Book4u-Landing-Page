@@ -30,12 +30,13 @@ module.exports = {
          },
 
          colors: {
+            primary: '#614242',
+            secondary: '#FF722D',
+            tertiary: '#3C9691',
+            quaternary: '#D9D0C1',
+            snow: '#FFFAFA',
             'btn-black': '#343A40',
-            'blue-low': '#D5E5E8',
             'blue-medium': '#A7D8DB',
-            'blue-hard': '#487C99',
-            'yellow-dand': '#F8D475',
-            'pink-gum': '#EAB5C2',
             'black-txt': '#1D1C1C',
          },
 

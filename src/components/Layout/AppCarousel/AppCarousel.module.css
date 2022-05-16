@@ -1,5 +1,5 @@
 .swiper__bullet :global(.swiper-pagination-bullet-active) {
-   @apply bg-yellow-dand;
+   @apply bg-secondary;
 }
 
 .swiper__slide :global(.swiper-slide img) {
